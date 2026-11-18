@@ -100,7 +100,7 @@ public class MoveManager : MonoBehaviour
         float frameRotation = 0;
         while (rotation < 90)
         {
-            frameRotation = 90 / (rotationSpeed * 90);
+            frameRotation = 90 / (rotationSpeed/Time.deltaTime);
             rotation += frameRotation;
             foreach(Transform cube in container.cubes)
             {
@@ -129,7 +129,7 @@ public class MoveManager : MonoBehaviour
         canRotate = false;
         while (rotation < 90)
         {
-            frameRotation = 90 / (rotationSpeed * 90);
+            frameRotation = 90 / (rotationSpeed / Time.deltaTime);
             rotation += frameRotation;
             cube.transform.Rotate(axis, frameRotation, Space.World);
             yield return null;
