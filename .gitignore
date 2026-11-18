@@ -5,6 +5,8 @@
 # Recommended: add any editor/OS/tool-specific ignore rules from the Global/ templates as needed.
 # See: https://github.com/github/gitignore/tree/main/Global
 #
+
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
@@ -13,6 +15,16 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+*.log
+
+
+/Rubik_s_cube/[Ll]ibrary/
+/Rubik_s_cube/[Tt]emp/
+/Rubik_s_cube/[Oo]bj/
+/Rubik_s_cube/[Bb]uild/
+/Rubik_s_cube/[Bb]uilds/
+/Rubik_s_cube/[Ll]ogs/
+/Rubik_s_cube/[Uu]ser[Ss]ettings/
 *.log
 
 # Memory Profiler generated files
