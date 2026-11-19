@@ -2,8 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 [System.Serializable]
 struct TuplePerso<T,R>
@@ -17,7 +19,7 @@ public class MoveManager : MonoBehaviour
 
     InputAction IAReverse;
 
-    [SerializeField] float rotationSpeed = 1f;
+    [SerializeField] SO_Settings setting;
 
     [SerializeField] List<TuplePerso<InputActionReference,TriggerContainer>> moves;
 
@@ -95,6 +97,7 @@ public class MoveManager : MonoBehaviour
 
     IEnumerator RotateLayer(TriggerContainer container, Vector3 axis)
     {
+        float rotationSpeed = setting.rotationSpeed;
         canRotate = false;
         float rotation = 0;
         float frameRotation = 0;
@@ -124,6 +127,7 @@ public class MoveManager : MonoBehaviour
 
     IEnumerator RotateCube(Vector3 axis)
     {
+        float rotationSpeed = setting.rotationSpeed;
         float rotation = 0;
         float frameRotation = 0;
         canRotate = false;

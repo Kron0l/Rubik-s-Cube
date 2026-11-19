@@ -9652,7 +9652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd5a6197d5b05842941e0a2e62da33f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveManager
-  rotationSpeed: 0.3
+  setting: {fileID: 11400000, guid: 1dc8cf6dcb19ac6449cb5741babe777b, type: 2}
   moves:
   - first: {fileID: 7567080590087069017, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     second: {fileID: 832719993}
@@ -10291,6 +10291,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3338550337674137014, guid: 0a26d3292027a1f478a02383ed780d9f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338550337674137014, guid: 0a26d3292027a1f478a02383ed780d9f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062792905400888592, guid: 0a26d3292027a1f478a02383ed780d9f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062792905400888592, guid: 0a26d3292027a1f478a02383ed780d9f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062792905400888592, guid: 0a26d3292027a1f478a02383ed780d9f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6380918116016154511, guid: 0a26d3292027a1f478a02383ed780d9f, type: 3}
       propertyPath: m_Name
       value: Canvas

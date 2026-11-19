@@ -4763,7 +4763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd5a6197d5b05842941e0a2e62da33f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveManager
-  rotationSpeed: 0.3
+  setting: {fileID: 11400000, guid: 1dc8cf6dcb19ac6449cb5741babe777b, type: 2}
   moves:
   - first: {fileID: 7567080590087069017, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     second: {fileID: 832719993}
